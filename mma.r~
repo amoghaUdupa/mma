@@ -1,10 +1,10 @@
 
 mma<-function(data_file, smin=10, smax=600, qmin=-5, qmax=5)
 {
-	#smin: minimal s scale used, when calculating Fluctuations - Fq(s) functions family (default 10)
-	#smax: maximal s scale used, when calculating Fq(s) functions family, has to be multiple of 5 (default 600; in general should be near to N/50, where N is a time series length)
-	#smin: minimal multifractal parameter q used (default -5)
-	#smax: maximal cmultifractal parameter q used (deafault 5)
+	#minimal s scale used, when calculating Fluctuations - Fq(s) functions family (default 10)
+	#maximal s scale used, when calculating Fq(s) functions family, has to be multiple of 5 (default 600; in general should be near to N/50, where N is a time series length)
+	#minimal multifractal parameter q used (default -5)
+	#maximal cmultifractal parameter q used (deafault 5)
 	qlist <- seq(from=qmin, to=qmax, by=0.1)
 	#cat(qlist);
 	# We can't have q value = 0 because we take power of 1/q at one point
