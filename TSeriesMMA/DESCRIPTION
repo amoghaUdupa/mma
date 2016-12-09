@@ -1,0 +1,9 @@
+Package: TSeriesMMA
+Title: Multiscale Multifractal Analysis of Time Series Data
+Version: 0.0.0.9000
+Authors@R: c(person("Vishakh", "Padmakumar", email = "vishakhpadmakumar@gmail.com", role = c("aut", "cre")), person("Rishab", "Ranga", email = "rishab.ranga1996@gmail.com", role = c("aut", "cre")), person("Amogha", "Udupa", email = "amogha15@gmail.com", role = c("aut", "cre")), person("Param", "Hanji", email = "param.catchchaos@gmail.com", role = c("aut", "cre"))) 
+Description: Multiscale Multifractal Analysis of Time Series Data
+Depends: R (>= 3.0.2)
+License: GPL (>=2)
+Encoding: UTF-8
+LazyData: true
