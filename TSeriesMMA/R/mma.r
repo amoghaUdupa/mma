@@ -1,6 +1,6 @@
 
 
-mma<-function(smin=10,smax=600,qmin=-5,qmax=5,data=signal,col='V1')
+mma<-function(smin=10,smax=600,qmin=-5,qmax=5,data=signal,col='V1',theta=-45,phi=25)
 {
   #smin <- 10      #minimal s scale used, when calculating Fq(s) functions family (default 10)
   
@@ -24,7 +24,7 @@ mma<-function(smin=10,smax=600,qmin=-5,qmax=5,data=signal,col='V1')
   
   #signal[[col]]
   mean=mean(signal[[col]])
-  mean
+  #mean
   # Find profile of the signal by calculating cumulative sum for the whole series
   prof = apply((signal[1][1]-mean),2,cumsum)
   signal[1][1]
@@ -121,7 +121,7 @@ mma<-function(smin=10,smax=600,qmin=-5,qmax=5,data=signal,col='V1')
   zfacet <- hplot[-1, -1] + hplot[-1, -ncol(hplot)] + hplot[-nrow(hplot), -1] + hplot[-nrow(hplot), -ncol(hplot)]
   # Recode facet z-values into color indices
   facetcol <- cut(zfacet, nbcol)
-  persp(c(unique(hqs[,1])),c(unique(hqs[,2])), hplot, zlim=c(0,2.5),col = color[facetcol], xlab="Multifractal Parameters(Q)", ylab="Scales(S)", zlab = "Hurst Exponent", phi=25, theta=-45, ticktype="detailed")
+  persp(c(unique(hqs[,1])),c(unique(hqs[,2])), hplot, zlim=c(0,2.5),col = color[facetcol], xlab="Multifractal Parameters(Q)", ylab="Scales(S)", zlab = "Hurst Exponent", phi=phi, theta=theta, ticktype="detailed")
 }
 #signal <- read.table("data.txt")
 #mma(smin=10,qmin=-5,qmax=5,data=signal)
