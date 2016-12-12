@@ -123,6 +123,6 @@ mma<-function(smin=10,smax=600,qmin=-5,qmax=5,data=signal,col='V1',theta=-45,phi
   facetcol <- cut(zfacet, nbcol)
   persp(c(unique(hqs[,1])),c(unique(hqs[,2])), hplot, zlim=c(0,2.5),col = color[facetcol], xlab="Multifractal Parameters(Q)", ylab="Scales(S)", zlab = "Hurst Exponent", phi=phi, theta=theta, ticktype="detailed")
 }
-signal <- read.table("data.txt")
-mma(smin=10,qmin=-5,qmax=5,data=signal,theta=-40)
+#signal <- read.table("data.txt")
+#mma(smin=10,qmin=-5,qmax=5,data=signal)
 
