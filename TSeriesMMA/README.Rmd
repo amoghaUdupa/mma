@@ -24,7 +24,7 @@ signal<-read.table('/home/data2.txt')
 ```
 
 Now use function MMA to generate the hurst surface plot for the dataframe passed
-Note that except the dataframe, all parameters are optional. 
+Note that except the dataframe, all parameters are optional. Column name of the column to be analysed must be specified if the dataframe has column names .
 
 ```{r}
 library('TSeriesMMA')
